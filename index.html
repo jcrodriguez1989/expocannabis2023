@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dr. Juan Cruz Rodriguez</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #366e41;
+    }
+    #background-image {
+      width: 100%;
+      height: auto;
+    }
+    .social-links {
+      position: absolute;
+      top: 2%;
+      left: 35%;
+      margin-left: 12%;
+    }
+  </style>
+</head>
+<body>
+  <div id="image-container">
+    <img id="background-image" src="images/card.jpeg" alt="Card Image">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jcrodriguez1989/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="LinkedIn" width="20%" height="20%">
+      </a>
+      <a id="whatsapp" href="https://api.whatsapp.com/send?phone=+5493516326854&text=Hola Juan Cruz Rodriguez!" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp" width="20%" height="20%">
+      </a>
+      <a href="mailto:jcrodriguez@unc.edu.ar" target="_blank">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email" width="20%" height="20%">
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  // Only show Whatsapp if we have the b2b query parameter.
+  const url = window.location.href;
+  const queryParameters = new URLSearchParams(url.split('?')[1]);
+  if (!queryParameters.has("b2b")) {
+    document.getElementById("whatsapp").style.display = 'none';
+  }
+</script>
+</html>
