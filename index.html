@@ -31,18 +31,21 @@
       <a id="whatsapp" href="https://api.whatsapp.com/send?phone=+5493516326854&text=Hola Juan Cruz Rodriguez!" target="_blank">
         <img src="images/whatsapp_logo.png" alt="WhatsApp" width="20%" height="20%">
       </a>
+      <a id="twitter" href="https://twitter.com/CancuCS" target="_blank">
+        <img src="images/twitter_logo.png" alt="Twitter" width="20%" height="20%">
+      </a>
       <a href="mailto:jcrodriguez@unc.edu.ar" target="_blank">
         <img src="images/gmail_logo.png" alt="Email" width="20%" height="20%">
       </a>
     </div>
     <div id="slides">
       <a href="https://docs.google.com/presentation/d/18V2YTCNaK8rHFJDyrT_FF9GuBALO4XyL/edit?usp=sharing&ouid=112393929170368698759&rtpof=true&sd=true" target="_blank">
-        <img src="images/presentation.jpg" alt="WhatsApp" width="5%" height="5%">
+        <img src="images/presentation.jpg" alt="Slides" width="5%" height="5%">
         <span style="font-size: 25px; color: white;">Filminas de la charla</span>
       </a>
       </br>
       <a href="https://medium.com/@jcrodriguez1989" target="_blank">
-        <img src="images/medium_logo.png" alt="WhatsApp" width="5%" height="5%">
+        <img src="images/medium_logo.png" alt="Medium" width="5%" height="5%">
         <span style="font-size: 25px; color: white;">Blog Posts</span>
       </a>
     </div>
@@ -54,6 +57,7 @@
   if (!queryParameters.has("b2b")) {
     document.getElementById("whatsapp").style.display = 'none';
   } else {
+    document.getElementById("twitter").style.display = 'none';
     document.getElementById("slides").style.display = 'none';
   }
 </script>
